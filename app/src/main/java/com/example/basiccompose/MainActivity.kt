@@ -63,6 +63,10 @@ fun BasicLayout(modifier: Modifier = Modifier) {
         Text(text = "Nadhira Rismawardah", color = Color.Red,
             style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold)
         )
+        Text(text = "20220140145",
+            style = TextStyle(fontSize = 50.sp, fontWeight = FontWeight.Bold),
+            modifier = Modifier.padding(top=20.dp)
+        )
     }
 }
 
