@@ -21,8 +21,9 @@ class MainActivity : ComponentActivity() {
             BasicComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     BasicLayout(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                        modifier = Modifier.padding(
+                            innerPadding
+                        )
                     )
                 }
             }
@@ -31,9 +32,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun BasicLayout(name: String, modifier: Modifier = Modifier) {
+fun BasicLayout(modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "Hello $!",
         modifier = modifier
     )
 }
@@ -42,6 +43,6 @@ fun BasicLayout(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     BasicComposeTheme {
-        BasicLayout("Android")
+        BasicLayout()
     }
 }
