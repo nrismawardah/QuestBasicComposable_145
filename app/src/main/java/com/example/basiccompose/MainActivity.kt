@@ -67,6 +67,9 @@ fun BasicLayout(modifier: Modifier = Modifier) {
             style = TextStyle(fontSize = 50.sp, fontWeight = FontWeight.Bold),
             modifier = Modifier.padding(top=20.dp)
         )
+        Image(painter = painterResource(id = R.drawable.nadhira), contentDescription = null,
+            modifier = Modifier.padding(top = 30.dp).size(400.dp)
+        )
     }
 }
 
